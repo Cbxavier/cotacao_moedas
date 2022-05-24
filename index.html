@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang='Pt-Br'>
+
+  <head>
+
+    <!--Tag Meta-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!--Titulo da página-->
+    <title>Cotação de moedas</title>
+    
+    <!--Link para CSS-->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+
+  </head>
+
+  <body>
+    <div class="container" >
+      <div class="content">      
+        <div id="tela">
+          <form method="post" action=""> 
+            <h1>Cotação de moedas</h1> 
+            <p> 
+              <!--Selecionar a moeda-->
+
+              <label for="moeda">Escolha a moeda</label>
+              <select onChange="changeOption()" id="codigo" name="codigo">
+                <option value="USD">Dólar</option>
+                <option value="EUR">Euro</option>
+                <option value="BTC">BitCoin</option>
+              </select>
+            </p> <br>
+
+          </form>
+
+          <!--Botão cotar--> 
+          <p> 
+            <button onClick="cotar()" id="btn-cotar" class="btn-cotar">Cotar</button> 
+          </p>
+
+          <!--Área que imprime os resultados -->
+          <div class="cotacao">
+            <div>
+              <label>Moeda: <span id="moeda"></span></label>
+            </div>
+            <br>
+
+            <div>
+              <label>Valor: <span id="cotacao"></span></label>
+            </div>
+            <br>
+            <div>
+              <label>Data: <span id="data"></span></label>
+            </div>
+            <br>
+          </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script  src='cotacao.js'></script>
+</body>
+
+
+</html>

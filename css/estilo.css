@@ -1,0 +1,97 @@
+/*CSS reset*/
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif ;
+}
+
+
+
+/*Classe que vai envolver o conteudo da tela do user*/
+.content{
+	width: 500px;
+	min-height: 560px;
+	margin-top: 15%;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	background-color: rgba(350, 350, 260, 0.6);
+	border-radius: 50px;
+}
+
+/*Cabeçalho do formulário*/
+
+h1{
+	font-size: 48px;
+	color: #066a75;
+	padding:  2px 0 10px 0;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+/*Cria uma barra abaixo do texto do cabeçalho separando do conteúdo*/
+
+h1:after{
+	content: ' ';
+	display: block;
+	width:  100%;
+	height: 2px;
+	margin-top:  10px;
+	background: : -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+	background:  linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);
+}
+
+/*alguns estilos das classes*/
+p{
+	margin-bottom: 15px;
+}
+
+.content p:first-child{
+	margin:  0px;
+}
+
+label{
+	color:  #405c60;
+	position:  relative;
+}
+
+
+/*estilo do botão submit */
+.btn-cotar{
+  width: 100%!important;
+  cursor: pointer;  
+  background: rgb(61, 157, 179);
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 20px;  
+  border: 1px solid #fff;   
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+ 
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+ 
+  transition: all 0.2s linear;
+}
+ 
+/*estilo do botão submit no hover */
+.btn-cotar:hover{
+  background: #4ab3c6;
+}
+
+.cotacao{
+	margin: 0 auto;
+	text-align: center;
+
+}
+.resultados{
+	padding: 15px;
+}
+
+#cotacao, #moeda, #data{
+	color: black!important;
+}
